@@ -101,21 +101,19 @@ html {
 }
 main {
   text-align: center;
-  margin: 100px auto 0;
-  padding: 0 25px;
+  margin: 0 auto;
+  padding: 25px 25px;
   max-width: 900px;
+  min-height: calc(100vh - 50px);
 }
 footer {
-  position: absolute;
   width: 100vw;
-  bottom: 0;
-  left: 0;
   text-align: center;
   padding: 15px;
   background-color: whitesmoke;
 }
 h1 {
-  font-size: 5rem;
+  font-size: 3.5rem;
   font-family: "gambado-sans-forte", sans-serif;
   font-weight: 700;
   font-style: normal;
@@ -124,7 +122,8 @@ h1 {
   letter-spacing: 10px;
 }
 h2 {
-  font-size: 2rem;
+  font-size: 1.2rem;
+  line-height: 1.4;
   font-family: "gambado-sans-forte", sans-serif;
   font-weight: 700;
   font-style: normal;
@@ -154,12 +153,12 @@ ul {
   display: flow-root;
 }
 li {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-family: "gambado-sans-forte", sans-serif;
   font-weight: 700;
   font-style: normal;
   text-transform: uppercase;
-  margin-bottom: 25px;
+  margin-bottom: 40px;
   letter-spacing: 10px;
 }
 a, a:visited, a:active {
@@ -177,21 +176,21 @@ a.red:hover {
  border-bottom: solid 3px #FB6107; 
 }
 .fun {
-  width: 350px;
-  margin: 100px auto;
+  width: 210px;
+  margin: 75px auto;
   display: flow-root;
 }
 .one {
-  width: 50px;
-  height: 50px;
-  margin: 0 25px 0 0;
+  width: 30px;
+  height: 30px;
+  margin: 0 15px 0 0;
   background-color: #FB6107;
   float: left;
 }
 .two {
-  width: 50px;
-  height: 50px;
-  margin: 0 25px;
+  width: 30px;
+  height: 30px;
+  margin: 0 15px;
   border-radius: 100%;
   background-color: #1E91D6;
   float: left;
@@ -199,16 +198,16 @@ a.red:hover {
 .three {
   width: 0;
   height: 0;
-  margin: 0 25px;
-  border-left: 25px solid transparent;
-  border-right: 25px solid transparent;
-  border-bottom: 50px solid #7CB518;
+  margin: 0 15px;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-bottom: 30px solid #7CB518;
   float: left;
 }
 .four {
-  width: 50px;
-  height: 50px;
-  margin: 0 0 0 25px;
+  width: 30px;
+  height: 30px;
+  margin: 0 0 0 15px;
   background-color: #F3DE2C;
   float: left;
 }
@@ -300,14 +299,22 @@ a.red:hover {
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
-
+@media only screen and (max-height: 900px) {
+  main {
+    padding-bottom: 100px;
+  }
+}
+@media screen and (max-height: 900px) and (max-width: 900px){
+  main {
+      padding-bottom: 50px;
+    }
+}
 @media only screen and (min-width: 900px) {
   html {
     font-size: 20px;
-    padding: 0 50px;
   }
   main {
-    margin-top: 150px;
+    padding-top: 50px;
   }
   h1 {
     font-size: 5rem;
@@ -332,6 +339,31 @@ a.red:hover {
   }
   li:last-of-type {
     margin-right: 0;
+  }
+  .fun {
+    width: 350px;
+    margin: 100px auto;
+  }
+  .one {
+    width: 50px;
+    height: 50px;
+    margin: 0 25px 0 0;
+  }
+  .two {
+    width: 50px;
+    height: 50px;
+    margin: 0 25px;
+  }
+  .three {
+    margin: 0 25px;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-bottom: 50px solid #7CB518;
+  }
+  .four {
+    width: 50px;
+    height: 50px;
+    margin: 0 0 0 25px;
   }
 }
 
