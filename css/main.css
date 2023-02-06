@@ -84,20 +84,20 @@ textarea {
   box-sizing: border-box;
 }
 html {
-  background-color: #0D1F22;
+  background-color: #F0F4EF;
   font-size: 16px;
 }
 .red {
-  color: #FB6107;
+  color: #60695C;
 }
 .yellow {
-  color: #F3DE2C;
+  color: #FFD042;
 }
 .green {
-  color: #7CB518;
+  color: #18B561;
 }
 .blue {
-  color: #1E91D6;
+  color: #1EA8D6;
 }
 main {
   text-align: center;
@@ -110,7 +110,7 @@ footer {
   width: 100vw;
   text-align: center;
   padding: 15px;
-  background-color: whitesmoke;
+  background-color: #60695C;
 }
 h1 {
   font-size: 3.5rem;
@@ -130,7 +130,7 @@ h2 {
   text-transform: uppercase;
   margin-bottom: 0;
   letter-spacing: 10px;
-  color: whitesmoke;
+  color: #60695C;
   margin-bottom: 50px;
 }
 p {
@@ -139,12 +139,12 @@ p {
   font-style: normal;
   font-size: 1rem;
   line-height: 1.5;
-  color: whitesmoke;
+  color: #60695C;
 }
 footer p {
   font-size: .8rem;
   margin: 0;
-  color: #0D1F22;
+  color: #F0F4EF;
 }
 ul {
   padding: 0;
@@ -163,17 +163,17 @@ li {
 }
 a, a:visited, a:active {
   text-decoration: none;
-  border-bottom: solid 3px whitesmoke;
+  border-bottom: solid 3px #60695C;
   transition: border-bottom 1s ease;
 }
 a.blue:hover {
- border-bottom: solid 3px #1E91D6; 
+ border-bottom: solid 3px #1EA8D6; 
 }
 a.yellow:hover {
- border-bottom: solid 3px #F3DE2C;; 
+ border-bottom: solid 3px #FFD042;; 
 }
-a.red:hover {
- border-bottom: solid 3px #FB6107; 
+a.green:hover {
+ border-bottom: solid 3px #18B561; 
 }
 .fun {
   width: 210px;
@@ -184,7 +184,7 @@ a.red:hover {
   width: 30px;
   height: 30px;
   margin: 0 15px 0 0;
-  background-color: #FB6107;
+  background-color: #FFD042;
   float: left;
 }
 .two {
@@ -192,7 +192,7 @@ a.red:hover {
   height: 30px;
   margin: 0 15px;
   border-radius: 100%;
-  background-color: #1E91D6;
+  background-color: #1EA8D6;
   float: left;
 }
 .three {
@@ -201,14 +201,14 @@ a.red:hover {
   margin: 0 15px;
   border-left: 15px solid transparent;
   border-right: 15px solid transparent;
-  border-bottom: 30px solid #7CB518;
+  border-bottom: 30px solid #18B561;
   float: left;
 }
 .four {
   width: 30px;
   height: 30px;
   margin: 0 0 0 15px;
-  background-color: #F3DE2C;
+  background-color: #FFD042;
   float: left;
 }
 
@@ -358,7 +358,7 @@ a.red:hover {
     margin: 0 25px;
     border-left: 25px solid transparent;
     border-right: 25px solid transparent;
-    border-bottom: 50px solid #7CB518;
+    border-bottom: 50px solid #18B561;
   }
   .four {
     width: 50px;
